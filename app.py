@@ -27,12 +27,12 @@ import numpy as np
 
 app = Flask(__name__)
 @app.route('/')
-def hello_world():
+def home():
     return render_template("index.html")
 database={'nachi':'123','james':'aac','karthik':'asdsf'}
 
-@app.route('/prediction',methods=['POST','GET'])
-def login():
+@app.route('/predict',methods=['POST','GET'])
+def predict():
     Age=request.form['Age']
     Sex=request.form['Sex']
     Cp=request.form['Cp']

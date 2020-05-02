@@ -68,7 +68,7 @@ span.psw {
 </style>
 </head>
 <body>
-<form action="/prediction" method="post">
+<form action="{{ url_for('predict')}}" method="post">
 
 <div class="w3-container">
   <h1 align="center">Heart Disease Prediction</h1>
