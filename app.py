@@ -1,29 +1,7 @@
-from flask import Flask,request,render_template
-from flask import Flask,request,render_template
-from sklearn.pipeline import Pipeline
+from sklearn.externals import joblib
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.impute import SimpleImputer
-from sklearn.compose import make_column_transformer
-from sklearn.pipeline import make_pipeline
-from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import StandardScaler
-from sklearn.decomposition import PCA
-from sklearn.pipeline import Pipeline
-from sklearn.model_selection import GridSearchCV
-from sklearn.metrics import accuracy_score
-from sklearn.externals import joblib
-from sklearn.linear_model import LogisticRegression
-from sklearn.ensemble import RandomForestClassifier
-from sklearn import svm
-import numpy as np
-%matplotlib inline
+from flask import Flask, request, jsonify, render_template
 
 app = Flask(__name__)
 @app.route('/')
